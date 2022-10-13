@@ -8,25 +8,83 @@
 body, h1, h2, h3, h4, h5, h6  {
   font-family: Georgia, serif;
 }
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+img.homepage {
+	padding: 50px 0px 50px 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.image {
+  flex-basis: 40%
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
 </style>
 <body>
-  
-<head>
+ 
+<!--<head>
 Nadine Grimm | Assistant Professor of Linguistics at the University of Rochester
-</head>
+</head>-->
 
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="research.html">Research</a>
+  <a href="Publication.html">Publications</a>
+  <a href="cv.html">CV</a>
+</div>
 
+<img width="100%" src="Ngolo2.jpg">
   
- <img src="Nadine_Grimm.jpeg" width="300" height"400"> 
+<div class="container">
+	<div class="image">
+		<img class="homepage" src="Nadine_Grimm.jpeg" width="300">
+	</div>
+	<div class="text">
+		<div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top">
+			<h3 class="w3-center">Welcome! I'm Nadine Grimm.</h3>
+			<hr>
+			<p>
+			I am an assistant professor in the <a href="http://www.sas.rochester.edu/lin/" target="_blank">Department of Linguistics</a> at the University of Rochester. I am intersted in Descriptive linguistics, Language documentation and description, African languages, Fieldwork, Typology, and Language contact and change.
+			</p>
+		</div>
+	</div>
+</div>
 
-  <h2> Home </h2> <h2> <a href="Publication.html"> Publications </a> </h2> 
-  
- <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="welcome">
-    <h3 class="w3-center">Welcome!</h3>
-    <hr>
-<p>I am an assistant professor in the <a href="http://www.sas.rochester.edu/lin/" target="_blank">Department of Linguistics</a> at 
-   the University of Rochester.   </p>
-    </div>
+
 
 </body>
 </html>
